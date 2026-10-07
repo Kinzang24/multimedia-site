@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brahmaputra Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Brahmaputra Gallery</h1>
+    <nav><a href="#images">Images</a><a href="#media">Video &amp; Audio</a><a href="#play">Interactive</a></nav>
+  </header>
+
+  <!-- ANIMATION -->
+  <div class="hero">
+    <h2>A day on the river</h2>
+    <div class="sun"></div>
+    <p>Animated with pure CSS keyframes.</p>
+    <span class="boat">⛵</span>
+    <svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="M0 30 Q 75 0 150 30 T 300 30 T 450 30 T 600 30 T 750 30 T 900 30 T 1050 30 T 1200 30 V60 H0Z" fill="#1e7f8c"/>
+    </svg>
+  </div>
+
+  <!-- IMAGES -->
+  <section id="images">
+    <h2>Images</h2>
+    <div class="grid">
+      <figure><img src="images/hills.svg" alt="Green hills under a blue sky"><figcaption>Hills</figcaption></figure>
+      <figure><img src="images/sunset.svg" alt="Orange sunset over land"><figcaption>Sunset</figcaption></figure>
+      <figure><img src="images/night-river.svg" alt="River at night"><figcaption>Night river</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- VIDEO + AUDIO -->
+  <section id="media">
+    <div class="row">
+      <div>
+        <h2>Video</h2>
+        <video controls preload="metadata">
+          <source src="video/river.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div>
+        <h2>Audio</h2>
+        <p>A short melody.</p>
+        <audio id="player" controls src="audio/melody.wav"></audio>
+        <button id="playNote">Play a chime</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE GRAPHICS -->
+  <section id="play">
+    <h2>Interactive graphics</h2>
+    <p>Move your mouse or finger over the canvas. Click to burst particles.</p>
+    <canvas id="cv"></canvas>
+    <button id="clear">Reset colours</button>
+  </section>
+
+  <footer>Made with HTML, CSS and JavaScript</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
